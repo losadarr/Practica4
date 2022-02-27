@@ -4,8 +4,9 @@ La práctica, hace uso de la api: https://www.thecocktaildb.com/api.php. Ésta m
 
 # Documentos
 
-###api.js: Documento javascript que conecta con la api y modifica index.html
-###index.html: Pagina principal de la práctica, filtra la info que le ofrece la api por medio de api.js.
+<b>api.js:</b> Documento javascript que conecta con la api y modifica index.html
+<br>
+<b>index.html:</b> Pagina principal de la práctica, filtra la info que le ofrece la api por medio de api.js.
 
 
 
