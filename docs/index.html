@@ -1,1 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cocktails Wiki </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../docs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../docs/css/hola.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fpng.pngtree.com%2Felement_origin_min_pic%2F16%2F11%2F30%2Fd0a4f1c9aa3faf51b4a1a3fcde71d6e9.jpg&imgrefurl=https%3A%2F%2Fes.pngtree.com%2Ffreepng%2Fred-cocktail_2204803.html&tbnid=C4HgXqvz8WOwTM&vet=12ahUKEwja_JXvnqD2AhUnSEEAHVeTClIQMygHegUIARDiAQ..i&docid=r2hqDUZ-rS0vNM&w=640&h=640&q=cocktail%20png&ved=2ahUKEwja_JXvnqD2AhUnSEEAHVeTClIQMygHegUIARDiAQ">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      html, body{
+            background-repeat: repeat;
+        }
+    </style>
+  </head>
+  
+  <body>
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+        <div class="h-50 p-5 text-white bg-dark rounded-3">
+        
+        <center><img src="../docs/cocktail-logo-png-7.png" width="400" height="300"></center>
+      </div>
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">¡ Bienvenido/a !</h1>
+        <p class="col-md-8 fs-4">A continuación podrás buscar tus cócteles preferidos, y te ofreceremos distintos detalles sobre ellos.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>ALGUNAS SUGERENCIAS</h2>
+          <p>De entre los más votados, se encuentran:</p>
+          <br>
+          
+          <ul>
+            <center><li>
+      
+              MARGARITA
+              
+            </li></center>
+            <hr>
+          <center><li>
+              MOJITO
+            </li>
+          </center>
+            <hr>
+          <center>
+            <li>
+              747
+            </li>
+          </center>
+            <hr>
+          <center>
+            <li>
+              B-53
+            </li>
+          </center>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Búsqueda:</h2>
+          <p>Adelante, introduce el nombre del cóctel que quieres buscar:</p>
+          <br>
+          <form class="row g-5 d-flex">
+            <center> <div class="col-md-3">
+                <input type="coctel" class="form-control" id="coctel">
+            </div>
+          </center>
+          <center> 
+            <div>
+                <button type="text" id = "boton" class="btn btn-outline-success btn-lg">Buscar</button>
+            </div>
+          </center>
+        </form>
+
+
+          <br>
+          <br>
+
+          
+<!--           <center><button class="btn btn-outline-secondary" type="submit" id="boton">Buscar</button></center>
+ -->          <div class="d-flex justify-content-center pb-2 mt-2">
+            <div class="spinner-border text-primary visually-hidden" role="status" id="loading">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <br>
+    <br>
+
+
+    <!--aqui mostraremos el resultado-->
+    <div class="container">
+      <table class="table table-dark table-striped border border-3 res text-center" id="tabla">
+        <thead>
+            <tr>
+                
+                
+                <th>Nombre</th>
+                <th>Ingredientes</th>
+                <th>Categoria</th>
+                <th>Instrucciones (EN)</th>
+                <!-- <th>Variaciones</th> -->
+            </tr>
+        </thead>
+        <tbody id="data" style="border-collapse: collapse;">
+
+        </tbody>
+      </table>
+  </div>
+      <nav aria-label="Page navigation" class="pag" id="pagination">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Up</a></li>
+          </ul>
+        </nav>
+</div>
+
+    
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2022
+    </footer>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="api.js" ></script>
+          
+
+</main>
+
+
+    
+  </body>
+</html>
